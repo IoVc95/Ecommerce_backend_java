@@ -1,6 +1,5 @@
 package com.webdev.clase2eventos.controller;
 
-
 import com.webdev.clase2eventos.eventos.UsuarioRegistradoEvent;
 import com.webdev.clase2eventos.model.Usuario;
 import com.webdev.clase2eventos.repository.UsuarioRepository;
@@ -25,6 +24,7 @@ import javax.swing.text.html.Option;
 
 @RestController
 @RequestMapping("/api/v1/auth")
+//Aquí se encuentra el endpoint para registrarse y logearse
 public class AuthController {
 
     private final ApplicationEventPublisher publisher;
